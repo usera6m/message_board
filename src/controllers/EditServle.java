@@ -23,16 +23,7 @@ public class EditServle extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public EditServle() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
-    /**
-     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-     */
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         EntityManager em = DBUtil.createEntityManager();
 
         // 該当のIDのメッセージ1件のみをデータベースから取得
